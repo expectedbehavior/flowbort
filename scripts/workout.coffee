@@ -5,7 +5,7 @@ module.exports = (robot) ->
 
   workoutReminderIntervalId = null
 
-  robot.respond /GET PUMPED( BRO)?( \d+)?$/, (msg) ->
+  robot.respond /GET PUMPED( BROS?)?( \d+)?$/, (msg) ->
     unless msg.match[2]
       return msg.send('Usage: "GET PUMPED <reps>"')
 
@@ -21,7 +21,7 @@ module.exports = (robot) ->
 
     repCount = msg.match[2].trim()
     robot.brain.set("workout:repCount", repCount)
-    msg.send("WORKOUT TIMER STARTED #{repCount}\nDo some pushups RIGHT NOW for a BROnus")
+    msg.send("WORKOUT TIMER STARTED\nDo some pushups RIGHT NOW for a BROnus")
 
     intervalAmount = 1000 * 60 * 60 # 1 hour
     workoutReminderIntervalId = setInterval () ->

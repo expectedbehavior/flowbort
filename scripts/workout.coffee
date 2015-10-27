@@ -5,7 +5,7 @@ module.exports = (robot) ->
 
   workoutReminderIntervalId = null
 
-  robot.hear /GET PUMPED( BRO)?( \d+)?$/, (msg) ->
+  robot.respond /GET PUMPED( BRO)?( \d+)?$/, (msg) ->
     unless msg.match[2]
       return msg.send('Usage: "GET PUMPED <reps>"')
 

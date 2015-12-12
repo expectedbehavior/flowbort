@@ -1,1 +1,1 @@
-web: bin/hubot -a flowdock -n bort
+web: ./bin/hubot -a flowdock -n bort

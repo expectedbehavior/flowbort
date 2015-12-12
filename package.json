@@ -1,7 +1,7 @@
 {
   "name": "hosted-hubot",
-  "version": "2.17.0",
-  "author": "hubot",
+  "version": "2.6.0",
+  "author": "GitHub Inc., supermatter, shiplington",
   "keywords": [
     "github",
     "hubot",
@@ -15,34 +15,21 @@
     "url": "https://github.com/github/hubot.git"
   },
   "dependencies": {
-    "async": ">=0.1.0 <1.0.0",
-    "chalk": "^1.0.0",
-    "cline": "^0.8.2",
-    "coffee-script": "1.6.3",
-    "connect-multiparty": "^1.2.5",
-    "express": "3.18.1",
-    "log": "1.4.0",
-    "optparse": "1.0.4",
-    "scoped-http-client": "0.11.0"
-  },
-  "devDependencies": {
-    "hubot-mock-adapter": "^1.0.0",
-    "coffee-errors": "0.8.6",
-    "mocha": "^2.1.0",
-    "mockery": "^1.4.0",
-    "sinon-chai": "^2.8.0",
-    "sinon":"~1.17.0",
-    "chai":"~2.1.0"
+    "cheerio": ">= 0.12.1",
+    "chrono-node": "^1.0.8",
+    "clark": "0.0.6",
+    "hubot": ">= 2.17.0 < 3.0.0",
+    "hubot-flowdock": ">= 0.0.1",
+    "hubot-scripts": ">= 2.5.0 < 3.0.0",
+    "jake": "latest",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6",
+    "scraper": ">= 0.0.9",
+    "sugar": "latest",
+    "underscore": ">=1.5.0"
   },
   "engines": {
-    "node": ">= 0.8.x",
-    "npm": ">= 1.1.x"
-  },
-  "main": "./index",
-  "bin": {
-    "hubot": "./bin/hubot"
-  },
-  "scripts": {
-    "test": "./script/test"
+    "node": "= 0.12.0",
+    "npm": "= 2.7.4"
   }
 }
